@@ -1,5 +1,5 @@
 <p align="center">
-  <a href=""><img alt="spradius" src="https://gist.github.com/amcc1996/05147008dcfa4da0dcd886c7f9093e01" width="60%"></a>
+  <a href=""><img alt="spradius" src="https://gist.github.com/amcc1996/05147008dcfa4da0dcd886c7f9093e01#file-spradius-svg" width="60%"></a>
   <p align="center">A spectral radius package for time-integration in solid dynamics.</p>
 </p>
 
@@ -8,10 +8,9 @@
 
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat)](https://github.com/psf/black)
-[![CodeFactor](https://www.codefactor.io/repository/github/amcc1996/spradius/badge/master?s=aa7aec16e5c3c7c74f96d414568d7c4a2d2227f2)](https://www.codefactor.io/repository/github/amcc1996/spradius/overview/master)
-[![codecov](https://codecov.io/gh/amcc1996/spradius/branch/master/graph/badge.svg?token=2JLOK50CJJ)](https://codecov.io/gh/amcc1996/spradius)
+[![CodeFactor](https://www.codefactor.io/repository/github/amcc1996/spradius/badge)](https://www.codefactor.io/repository/github/amcc1996/spradius)
+[![codecov](https://codecov.io/gh/amcc1996/spradius/branch/main/graph/badge.svg?token=PIU6UDGBGO)](https://codecov.io/gh/amcc1996/spradius)
 [![gh-actions](https://img.shields.io/github/workflow/status/amcc1996/spradius/ci?style=flat)](https://github.com/amcc1996/spradius/actions?query=workflow%3Aci)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/amcc1996/bending-playground/master?filepath=bending-diagrams.ipynb)
 
 spRadius is a *not-so fast* spectral radius computation package for Python.
 
