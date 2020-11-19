@@ -1,5 +1,5 @@
 <p align="center">
-  <a href=""><img alt="spradius" src="https://gist.github.com/amcc1996/05147008dcfa4da0dcd886c7f9093e01#file-spradius-svg" width="60%"></a>
+  <a href=""><img alt="spradius" src="https://gist.githubusercontent.com/amcc1996/05147008dcfa4da0dcd886c7f9093e01/raw/3f25eeb0f8011326dd4e2ba7c68393e4e5ddf7c4/spradius.svg" width="60%"></a>
   <p align="center">A spectral radius package for time-integration in solid dynamics.</p>
 </p>
 
