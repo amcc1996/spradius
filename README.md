@@ -4,7 +4,7 @@
 </p>
 
 [![PyPi Version](https://img.shields.io/pypi/v/spradius.svg?style=flat)](https://pypi.org/project/spradius)
-[![PyPI pyversions](https://img.shields.io/pypi/pyversions/spradius.svg?style=flat-square)](https://pypi.org/pypi/spradius/)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/spradius.svg?style=flat)](https://pypi.org/pypi/spradius/)
 
 [![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg?style=flat)](https://github.com/psf/black)
@@ -12,7 +12,11 @@
 [![codecov](https://codecov.io/gh/amcc1996/spradius/branch/main/graph/badge.svg?token=PIU6UDGBGO)](https://codecov.io/gh/amcc1996/spradius)
 [![gh-actions](https://img.shields.io/github/workflow/status/amcc1996/spradius/ci?style=flat)](https://github.com/amcc1996/spradius/actions?query=workflow%3Aci)
 
-spRadius is a *not-so fast* spectral radius computation package for Python.
+spRadius is a *not-so-fast* spectral radius numerical computation package for Python specialised in time-integration algorithm for solid dynamics.
+It is based on the work of [Benítez and Montáns](https://www.sciencedirect.com/science/article/pii/S0045794913002101?via%3Dihub), who propose an algorithm for computing the amplification matrix and, therefore, the spectral radius, by computing the mechanical response of the system to unit initial conditions.
+
+As clearly mentioned in that work, in general, the spectral radius needs to be computed from the displacement solution during a large number of time steps, owing to the inconsistent initial acceleration evaluation. Since the numerical computation of the spectral radius involves a root with order equal to the number of steps, typical double machine precision is quickly surpassed. To circumvent this pitfall, the arbitrary precision floating-point arithmetic library [mpmath
+](http://mpmath.org/) is utilised, at expense of a drastic reduction in performance.
 
 ## Installation
 Clone this repository into your system
@@ -109,3 +113,6 @@ which will run the test and create the coverage information in `htmlcov`.
 Copyright 2020, António Carneiro
 
 spRadius is free and open-source software and is published [MIT License](https://opensource.org/licenses/MIT).
+
+## References
+1. Benítez JM, Montáns FJ. The value of numerical amplification matrices in time integration methods. Computers & Structures. 2013 Nov 1;128:243–50. 
