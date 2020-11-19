@@ -20,7 +20,7 @@ with open(os.path.join(here, "README.md"), encoding="utf-8") as f:
 
 setup(
     # Project name
-    name="specrad",
+    name="spradius",
     # Version from the version file
     version=version,
     # Short description
