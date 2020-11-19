@@ -61,5 +61,5 @@ setup(
     packages=find_packages(),
     # Python version compatibility
     python_requires=">=3.6, <3.9",
-    install_requires=[],
+    install_requires=["mpmath>=1.1.0", "numpy>=1.19.4", "tqdm>=4.52.0"],
 )
