@@ -4,7 +4,7 @@ VERSION=$(shell cat ./VERSION)
 # Data for communication with Github
 GIT_BRANCH=$(shell git rev-parse --abbrev-ref HEAD)
 TOKEN=$(shell cat ~/.github-access-token)
-API_JSON=$(shell printf '{"tag_name": "v%s","target_commitish": "master","name": "v%s","body": "Release of version %s","draft": false,"prerelease": false}' $(VERSION) $(VERSION) $(VERSION))
+API_JSON=$(shell printf '{"tag_name": "v%s","target_commitish": "main","name": "v%s","body": "Release of version %s","draft": false,"prerelease": false}' $(VERSION) $(VERSION) $(VERSION))
 URL=https://api.github.com/repos/amcc1996/spradius/releases
 
 .PHONY: format coverage clean img tests deploy
