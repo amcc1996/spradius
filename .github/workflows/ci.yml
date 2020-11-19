@@ -26,7 +26,7 @@ jobs:
     - name: Check code
       run: |
         isort --check --color .
-        black -l 92 --check .
+        black -l 79 --check .
         flake8 .
           
   build:
