@@ -27,6 +27,10 @@ and install the Python package with `pip3`, running the following command inside
 ```
 pip3 install .
 ```
+Alternatively, you can install it directly from PyPI with
+```
+pip3 install spradius
+```
 At this point, spRadius can be imported into your Python scripts and modules the usual Python-way
 ```python
 import spradius
@@ -91,9 +95,14 @@ ax.grid()
 plt.show()
 ```
 
+<p align="center">
+  <a href=""><img alt="spradius_example" src="https://gist.githubusercontent.com/amcc1996/ad55d0995bd37c289a954e31fa2703b3/raw/aac579b35de2243e063b617d5f10aae3bf4aed98/spradius_example.svg" width="50%"></a>
+  <p align="center">Example spectral radius plot obtained with spRadius.</p>
+</p>
+
 ## Running the tests
 
-SymBeam [tests](tests) can by run with [pytest](https://docs.pytest.org/en/stable/contents.html) so start by installing the framework
+spRadius [tests](tests) can by run with [pytest](https://docs.pytest.org/en/stable/contents.html) so start by installing the framework
 ```
 pip3 install pytest
 pip3 install pytest-cov # optional, to generate coverage reports
